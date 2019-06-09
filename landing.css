@@ -1,68 +1,84 @@
-* {
-	box-sizing: border-box;
+body {
 	margin: 0;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
+* {
+	box-sizing: border-box;
 }
 
-#header {
+
+.header {
 	background-color: #38001F;
 	padding: 20px;
-	color: #20002E;
-	font-size: 80px;
+	color: black;
+	font-size: 20pt;
 	font-weight: bolder;
 	text-align: center;
 	box-shadow: 5px 5px 4px black;
-	text-shadow: 5px 5px 4px #20002E;
+	text-shadow: 5px 5px 4px black;
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
 }
 
 span.head1 {
 	color: black;
-	font-size: 150px;
+	font-size: 40pt;
 	text-shadow: 5px 5px 4px black;
 }
 
 span.head2 {
 	color: cyan;
-	font-size: 120px;
+	font-size: 30pt;
 	text-shadow: 5px 5px 4px cyan;
+	padding: 5px;
+}
+#row {  
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
 .main {
-	background-color: #630036;
+	background-color: #aaa;
 	text-align: justify;
 	margin-top: 5px;
 	font-size: 16pt;
-	box-shadow: 5px 9px 4px #630036;
-	border-radius: 5%;
-	margin-left: 30px;
+	/*box-shadow: 5px 9px 4px #630036;*/
+	width: 70%;
+	/*margin-left: 30px;*/
 
 }
 
-.rsidebar {
-	background-color: #630036;
+img {
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+	float: left;
+}
+
+.side {
+	background-color: #aaa;
 	margin-top: 5px;
-	margin-left: 30px;
-	box-shadow: 5px 9px 4px #630036;
+	margin-left: 10px;
+
+	/*box-shadow: 5px 9px 4px #630036;*/
 	color: #D20073;
-	text-shadow: 5px 5px 4px black;
+	/*text-shadow: 5px 5px 4px black;*/
 	text-align: center;
-	font-size: 20pt;
-	border-radius: 5%;
+	/*font-size: 20pt;*/
+	/*border-radius: 5%;*/
 	clear: right;
-	margin-bottom: 8px;
+	/*margin-bottom: 20px;*/
+	width: 29%;
 }
 
-.rsidebar p {
+.side p {
 	color: #8D5B77;
 	font-weight: bold;
-	text-shadow: 5px 5px 4px black;
-	padding: 5px;
+	/*text-shadow: 5px 5px 4px black;*/
+	padding: 2px;
 }
+
+
 
 
 .footer {
@@ -85,38 +101,27 @@ span.head2 {
 	text-shadow: 5px 5px 4px cyan;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+/* Responsive layout - when the screen is less than 700px wide, 
+make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 998px) {
+  .side {   
+    margin-left: 5px;
+    
+  }
+  
 }
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+@media screen and (max-width: 700px) {
+  #row, .main, .side {   
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  
 }
+
+/* For mobile phones: */
+/*[class*="col-"] {
+  width: 100%;
+}*/
