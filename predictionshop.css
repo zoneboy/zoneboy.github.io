@@ -1,0 +1,537 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+
+}
+header h1 a {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 70%;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 40pt;
+	font-style: italic;
+	
+}
+span.col1 {
+	color: #042352;
+}
+span.col2 {
+	color: #63A100;
+}
+span.col3 {
+	color: #B5010E;
+}
+/* Add a black background color to the top navigation */
+.nav {
+	flex: 70%;
+	align-items: center;
+}
+.topnav {
+  background: linear-gradient(#FFFFFF, #EAEAEA);
+  overflow: hidden;
+  border:#A3A3A3 1px solid;
+  border-radius: 5px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #646464;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  border-right: #A3A3A3 1px solid;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #63A100;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: #63A100;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.row {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 70%;
+
+}
+
+.left {
+	flex: 60%;
+	/*float: left;*/
+	/*justify-content: center;*/
+	/*flex-direction: row;*/
+
+}
+.second {
+	width: 60%;
+	/*float: left;*/
+	/*justify-content: center;*/
+	/*flex-direction: row;*/
+	clear: both;
+
+}
+.mainlogo {
+	background-color: #042352;
+	color: white;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	align-items: center;
+}
+
+.mainlogo .text {
+	width: 50%;
+	padding: 25px 0px 0px 25px;
+}
+.mainlogo span {
+	padding-left: 25px;
+	padding-top: 10px;
+	display: block;
+	font-size: 30px;
+}
+
+.mainlogo h2 {
+	background: linear-gradient(#B8010E, #CD0210);
+	padding-top: 5px;
+	margin-left: 25px;
+	border-radius: 5px;
+	color: white;
+	width: 200px;
+	margin-top: 20px;
+}
+
+.mainlogo a {
+	text-decoration: none;
+	text-align: center;
+}
+
+h2:hover {
+	background: linear-gradient(#CD0210, #B8010E);
+}
+
+.smalllogo {
+	flex: 100%;
+}
+.smalllogo ul {
+	margin: 0px;
+	padding: 0px;
+}
+.smalllogo ul li {
+	float: left;
+	background-color: #EEEEEE;
+	height: 100px;
+	width: 33.3%;
+	border-right: 1px solid white;
+	list-style-type: none;
+	cursor: pointer;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+.smalllogo ul li a {
+	background-color: #EEEEEE;
+	text-decoration: none;
+	color: black;
+}
+
+.smalllogo img {
+	float: left;
+}
+
+.smalllogo ul li a:hover {
+	color: #63A100;
+}
+.divider {
+    background-color: #329FD7;
+    padding: 2px 0;
+    float: left;
+    margin-bottom: -5px;
+    width: 100%;
+}
+
+table {
+	text-align: left;
+	flex: 100%;
+	flex-wrap: wrap;
+
+}
+
+table a {
+	text-decoration: none;
+	color: #329FD7;
+}
+table a:hover {
+	color: #63A100;
+}
+table thead {
+	background-color: #63A100;
+	color: white;
+}
+.divider2 {
+    background-color: #329FD7;
+    padding: 2px 0;
+    /*float: left;*/
+    margin-top: 20px;
+   flex: 100%;
+}
+
+.stop h1 {
+	padding: 0px 0px 20px 0px;
+	text-align: center;
+}
+.bets img {
+	width: 100px;
+	padding: 12px 5px 0px 0;
+}
+.bets {
+	text-align: center;
+}
+
+/*This is the right sidebar*/
+.right {
+	/*float: left;*/
+	flex: 35%;
+	margin-left: 5%;
+	margin-top: 10px;
+}
+
+.sidebar1 {
+	flex: 100%;
+	/*height: 40px;*/
+	background-color: #EEEEEE;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.sidebar1 span {
+	font-size: 30px;
+}
+.sidebar1 h1 {
+	color: white;
+	background-color: #042352;
+	padding: 10px;
+	text-align: center;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sidebar1 h2 {
+	background: linear-gradient(#B8010E, #CD0210);
+	padding-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	color: white;
+	width: 200px;
+	margin-top: 10px;
+}
+
+.sidebar1 a {
+	text-decoration: none;
+	text-align: center;
+}
+.sidebar1 ul li {
+	list-style-type: none;
+	font-size: 12px;
+	padding: 5px;
+	text-align: justify;
+	width: 200px;
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+.sidebar1 ul li img {
+	float: left;
+	padding-right: 5px;
+}
+.sidebar1 ul {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 87px;
+}
+
+.sidebar2 {
+	flex: 100%;
+	/*height: 40px;*/
+	background-color: #EEEEEE;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.sidebar2 span {
+	background-color: #63A100;
+	color: white;
+	font-weight: bolder;
+	width: 100%;
+	display: block;
+}
+.sidebar2 p {
+	text-align: left;
+	padding: 9px;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+.divider3 {
+    background-color: #329FD7;
+    padding: 5px 5px;
+    /*s*/
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.more {
+	background-color: #63A100;
+	color: white;
+	font-weight: bolder;
+	padding: 8px;
+	margin-bottom: 8px;
+}
+.more a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+.more img {
+	float: left;
+	padding-right: 10px;
+}
+/*This makes the footer margin to work*/
+.after {
+    clear: both;
+    height: 5px;
+}
+footer {
+	background-color: #329FD7;
+	margin-top: 15px;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+footer ul li {
+			display:inline-block;
+			list-style-type:none;
+			padding:5px;
+}
+
+footer li a {
+	text-decoration: none;
+	color: #23679B;
+}
+
+footer ul li:last-child {
+	padding-left: 100px;
+}
+	
+/*.foot a {
+	text-decoration: none;
+	color: #23679B;
+	font-size: 13px;
+	padding-right: 5px;
+	/*display: flex;
+*/	/*flex-wrap: wrap;*/
+
+
+
+/*.first, .right, .second, .after {
+	display: flex;
+	flex-wrap: wrap;
+}*/
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 420px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+
+  }
+  footer ul li:last-child {
+	clear: both;
+}
+footer ul li {
+			display:inline-block;
+			list-style-type:none;
+			padding:0px;
+			font-size: 13px;
+}
+  
+  .first{order: 1}
+  .right {order: 2}
+  .second {order: 3}
+  .after {order: 4}
+
+  .topnav {
+  	 margin-left: 0px;
+     margin-right: 0px;
+     width: 100%;
+  }
+
+  header h1 a {
+	/*margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 70%;
+	text-decoration: none;
+	font-weight: bold;*/
+	font-size: 27pt;
+	/*font-style: italic;*/
+	
+}
+
+table {
+	font-size: 9pt;
+}
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.right {
+		width: 100%;
+		margin: 0;
+	}
+	.sidebar2, .more {
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+	}
+	.smalllogo .last {
+		display: none;
+	}
+	.smalllogo ul li {
+		width: 50%;
+	}
+	.mainlogo {
+		width: 100%;
+	}
+	.second, .stop {
+  	flex: 100%;
+  	width: 100%;
+  }
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon) */
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+
+  }
+  
+  .first{order: 1}
+  .right {order: 2}
+  .second {order: 3}
+  .after {order: 4}
+
+  .topnav {
+  	 margin-left: 0px;
+     margin-right: 0px;
+     width: 100%;
+  }
+  .second, .stop {
+  	flex: 100%;
+  	width: 100%;
+  }
+
+  header h1 a {
+	/*margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 70%;
+	text-decoration: none;
+	font-weight: bold;*/
+	font-size: 30pt;
+	/*font-style: italic;*/
+	
+}
+
+/*table {
+	font-size: 9pt;
+}*/
+
+.sidebar2, .more {
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+	}
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.right {
+		width: 100%;
+		margin: 0;
+	}
+	.sidebar2 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.smalllogo .last {
+		display: none;
+	}
+	.smalllogo ul li {
+		width: 50%;
+	}
+	.mainlogo {
+		width: 100%;
+	}
+
+	/*footer, .foot {
+		width: 100%;
+		flex: 100%;
+	}*/
+	footer ul li:last-child {
+	clear: both;
+}
+footer ul li {
+			display:inline-block;
+			list-style-type:none;
+			padding:0px;
+			font-size: 15px;
+}
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}  
+
+
