@@ -395,10 +395,13 @@ footer ul li {
 	width: 70%;
 	text-decoration: none;
 	font-weight: bold;*/
-	font-size: 27pt;
+	font-size: 25pt;
 	/*font-style: italic;*/
 	
 }
+.smalllogo ul li a {
+	font-size: 10pt;
+}	
 
 table {
 	font-size: 9pt;
