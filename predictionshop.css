@@ -370,6 +370,10 @@ Show the link that contains should open and close the topnav (.icon) */
   footer ul li:last-child {
 	clear: both;
 }
+ .mainlogo .text {
+	width: 90%;
+	padding: 25px 0px 0px 25px;
+}	
 footer ul li {
 			display:inline-block;
 			list-style-type:none;
